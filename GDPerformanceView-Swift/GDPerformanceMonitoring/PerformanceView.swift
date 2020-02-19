@@ -337,7 +337,7 @@ private extension PerformanceView {
 
 private extension PerformanceView {
     class func windowFrame(withPrefferedHeight height: CGFloat) -> CGRect {
-        guard let window = UIApplication.shared.delegate?.window as? UIWindow else {
+        guard let window = UIApplication.shared.keyWindow else {
             return .zero
         }
         
